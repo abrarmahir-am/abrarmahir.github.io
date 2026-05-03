@@ -2,28 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABRAR MAHIR</title>
+
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
+    }
+
+    body {
+      background: #0f172a;
       color: white;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 15px;
       text-align: center;
+      font-size: 24px;
+      font-weight: bold;
     }
 
-    .container {
-      padding-top: 120px;
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #3b82f6, #06b6d4);
     }
 
-    h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
+    .hero h1 {
+      font-size: 40px;
     }
 
-    p {
-      font-size: 20px;
-      opacity: 0.9;
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
     }
 
     .btn {
@@ -31,23 +46,83 @@
       margin-top: 20px;
       padding: 12px 25px;
       background: white;
-      color: #333;
-      border-radius: 25px;
+      color: black;
       text-decoration: none;
+      border-radius: 25px;
       font-weight: bold;
     }
 
-    .btn:hover {
-      background: #eee;
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #334155;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Hello 👋</h1>
-    <p>Iam ABRAR MAHIR</p>
-    <a class="btn" href="https://github.com">Visit GitHub</a>
+
+  <header>
+    ABRAR MAHIR
+  </header>
+
+  <div class="hero">
+    <h1>Hello, I am AM15 💌</h1>
+    <p>Beginner Web Developer</p>
+    <a class="btn" href="#">Contact Me</a>
   </div>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am learning web development and building cool websites.</p>
+  </section>
+
+  <section>
+    <h2>My Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">Project 1</div>
+      <div class="card">Project 2</div>
+      <div class="card">Project 3</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 ABRAR MAHIR | All Rights Reserved
+  </footer>
+
 </body>
 </html>
